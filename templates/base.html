@@ -1,0 +1,4 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#800020"><title>StudySpace - Learn smarter. Remember longer.</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css', v=asset_version) }}"><script src="{{ url_for('static', filename='script.js', v=asset_version) }}" defer></script></head>
+<body data-auth-mode="{% block auth_mode %}login{% endblock %}"><div id="notice" role="status" aria-live="polite"></div><div id="root"><p class="loading">Opening your study space...</p></div>
+<dialog id="editor"><form id="editor-form"><h2 id="editor-title"></h2><div id="editor-fields"></div><div class="actions"><button type="button" class="secondary" id="cancel-edit">Cancel</button><button>Save</button></div></form></dialog></body></html>
