@@ -2,3 +2,5 @@ Flask>=3.0,<4
 Werkzeug>=3.0,<4
 pypdf>=5,<7
 python-docx>=1.1,<2
+# Production web server for Render/Linux; local Windows development still uses Flask.
+gunicorn>=26.2,<27; sys_platform != "win32"
